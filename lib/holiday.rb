@@ -24,14 +24,11 @@ def second_supply_for_fourth_of_july(holiday_supplies)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
- describe "#add_supply_to_winter_holidays" do
-    it "iterates through winter holidays adds a supply to each one" do
-      add_supply_to_winter_holidays(holiday_supplies, "Balloons")
-      expect(holiday_supplies[:winter][:christmas]).to include("Balloons")
-      expect(holiday_supplies[:winter][:new_years]).to include("Balloons")
+holiday_hash[:winter].each do |holiday, items|
+    items << supply
+    puts items
     end
-  end
-  end
+end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
