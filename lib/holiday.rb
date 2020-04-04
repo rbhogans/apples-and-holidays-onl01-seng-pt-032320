@@ -24,7 +24,7 @@ def second_supply_for_fourth_of_july(holiday_supplies)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-holiday_hash[holiday_supplies] [:winter] = {
+holiday_hash[holiday_supplies] :winter = {
     :christmas => ["Lights", "Wreath"],
     :new_years => ["Party Hats"]
     :supply => []
