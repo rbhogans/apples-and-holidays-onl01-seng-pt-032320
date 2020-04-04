@@ -24,7 +24,7 @@ def second_supply_for_fourth_of_july(holiday_supplies)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  describe "#add_supply_to_winter_holidays" do
+ describe "#add_supply_to_winter_holidays" do
     it "iterates through winter holidays adds a supply to each one" do
       add_supply_to_winter_holidays(holiday_supplies, "Balloons")
       expect(holiday_supplies[:winter][:christmas]).to include("Balloons")
