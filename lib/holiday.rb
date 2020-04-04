@@ -37,7 +37,6 @@ holiday_hash[:spring].each do |holiday, items|
     puts items
     end  # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
-
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
